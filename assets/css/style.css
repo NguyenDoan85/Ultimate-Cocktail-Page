@@ -1,0 +1,13 @@
+.titleHero{
+ color: black;
+ font-size: xx-large;
+ font-weight: bold;
+ display: inline-flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: baseline;
+}
+
+#Cocktails-Delights {
+    font-weight: bold;
+}
