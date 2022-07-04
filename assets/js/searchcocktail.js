@@ -15,11 +15,7 @@ function getCocktailByName(cocktail) {
             displayinputvalue(cocktailData)
         })
         .catch((error) => {
-            if (document.getElementById("searchCocktail").value == "") {
-                showErrMsg(error)
-            } else {
-                hideErrMsg(error)
-            };
+            console.log(error)
         })
 }
 
