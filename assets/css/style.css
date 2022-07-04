@@ -1,0 +1,24 @@
+.titleHero{
+ color: black;
+ font-size: xx-large;
+ font-weight: bold;
+ display: inline-flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: baseline;
+}
+
+#Cocktails-Delights {
+    font-weight: bold;
+}
+
+.image img {
+    display: block;
+    height: auto;
+    width: 50px;
+}
+
+h4#subHead{
+    font-weight: bold;
+    font-size:x-large;
+}
