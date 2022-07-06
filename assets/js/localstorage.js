@@ -34,7 +34,7 @@ const updateSearchHistoryList = (searchHistory) => {
         searchTermElement.text(`${searchHistory[searchTerm].text}`);
         searchHistoryList.append(searchTermElement);
         searchTermElement.on('click', function() {
-            teamSearch($(this).attr('data-search'));
+            cocktailSearch($(this).attr('data-search'));
         });
     };    
 };
