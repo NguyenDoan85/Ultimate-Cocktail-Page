@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html lang="en" >
+<html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,109 +18,127 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Cocktails Delights</title>
-  </head>
-  <body>
-          <div class="titleHero">
-            <element id="Cocktails Delights">Cocktail Delights</element>
-            <p class="p1">The best cocktails out there!</p>
-        </div>
-        <div>
-            <img class="main-image" src="images/Picture1.jpg">   
-        </div>
-      </div>
+</head>
 
-    </section>
+<body>
+    <div class="titleHero">
+        <element id="Cocktails Delights">Cocktail Delights</element>
+        <p class="p1">The best cocktails out there!</p>
+    </div>
     <!-- End of Top part of page-->
     <!--Search Section-->
-    <section class="section">
+    <section class="hero is-fullheight is-primary has-bg-img" id="background">
         <div class="container">
             <div class="columns">
-                <div class="column is-4">
-                    <!-- search by cocktails name -->
-                    <div class="columns">
-                        <div class="column">
-                            <section class="search-box" id="search-box">
-                                <div class="container">
-                                    <h1 class="title">Know Whatch'a Want?</h1>
-                                    <h2>Search by Cocktail Name</h2>
-                                    <br>
-                                    <div class="control">
-                                        <input class="input" type="text" id="cocktail" placeholder="">
-                                    </div>
-                                    <br>
-                                    <div class="control">
-                                        <button class="button is-primary" id="submit">Submit</button>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <!--Random Cocktail Section-->
-                        <div class="column">
-                            <section class="Random-search" id="search-box">
-                                <h1 class="title"> Wanna go crazy today?</h1>
-                                <h2>Try this button and find out!</h2>
-                                <br>
-                                <div class="control">
-                                    <button style="font-family:cursive" class="button is-primary" id="randomBt">Random</button>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                    <!-- Display info replayed back from the API server -->
-                    <div class="search-result">
-                        <div class="row displayCocktail" id="#displayCocktail">
-                            <div class="col-xs-push-2 col-xs-5" id="cocktailPicture"></div>
-                            <div class="col-xs-push-1 col-xs-4" id="cocktailInfo">
-                                <div id="cocktailTitle"></div>
-                                <div id="howTo"></div>
-                                <div id="instructions"></div>
+                <!-- search by cocktails name -->
+                <div class="column">
+                    <section class="section" id="search-box">
+                        <div class="container">
+                            <h1 class="title">Wanna have some fun today?</h1>
+                            <h2>A cocktail drinl is waiting for you! Cratch that, MANY cocktails drink is waiting for
+                                you! <strong>ENJOY!</strong></h2>
+                            <br>
+                            <div class="control">
+                                <input class="input" type="text" id="cocktail" placeholder="">
+                            </div>
+                            <br>
+                            <div class="control">
+                                <button class="button is-primary" id="submit">Submit</button>
                             </div>
                         </div>
-                    </div>
-                    <!-- share button for facebook and twitter -->
-                    <div class="wrapper">
-                        <div class="toggle_button">
-                            <ul>
-                                <li>
-                                    <a class="share_btn">
-                                        <span class="text">SHARE</span>
-                                        <span class="icon"><i class="fas fa-bullhorn"></i></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="fb-share-button"
-                                        data-href="https://nguyendoan85.github.io/Ultimate-Cocktail-Page/"
-                                        data-layout="button_count" data-size="small">
-                                        <a target="_blank"
-                                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnguyendoan85.github.io%2FUltimate-Cocktail-Page%2F&amp;src=sdkpreparse"
-                                            class="fb-xfbml-parse-ignore">Share</a>
-                                    </div>
-                                </li>
-                                <br>
-                                <li>
-                                    <a href="https://twitter.com/intent/tweet?button_hashtag=CocktailsDelights&ref_src=twsrc%5Etfw"
-                                        class="twitter-hashtag-button" data-show-count="false">Tweet
-                                        #Cocktails_Delights</a>
-                                    <script async src="https://platform.twitter.com/widgets.js"
-                                        charset="utf-8"></script>
-                                </li>
-                            </ul>
+                    </section>
+                </div>
+                <!-- End of search of cocktail by name -->
+
+                <!--Random Cocktail Section-->
+                <div class="column">
+                    <section class="section" id="search-box">
+                        <h1 class="title"> Wanna go crazy today?</h1>
+                        <h2>Try this button and find out!</h2>
+                        <br>
+                        <div class="control">
+                            <button style="font-family:cursive" class="button is-primary" id="randomBt">Random</button>
                         </div>
+                    </section>
+                </div>
+                <!-- End of Random Cocktail Section -->
+            </div>
+
+            <!-- Display info replayed back from the API server -->
+            <div class="search-result">
+                <div class="row displayCocktail" id="#displayCocktail">
+                    <div class="col-xs-push-2 col-xs-5" id="cocktailPicture"></div>
+                    <div class="col-xs-push-1 col-xs-4" id="cocktailInfo">
+                        <div id="cocktailTitle"></div>
+                        <div id="howTo"></div>
+                        <div id="instructions"></div>
                     </div>
                 </div>
             </div>
+            <!-- End of info from API server -->
+
+            <!-- Share button for Facebook, Twitter, Instagram, and Pinterest -->
+            <div class="wrapper column">
+                <div class="toggle_button">
+                    <ul>
+                        <li>
+                            <a class="share_btn">
+                                <span class="text">SHARE</span>
+                                <span class="icon"><i class="fas fa-bullhorn"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnguyendoan85.github.io%2FUltimate-Cocktail-Page%2F&src=sdkpreparse"
+                                class="sm facebook">
+                                <span class="icon">
+                                    <i class="fab fa-facebook-square"></i>
+                                </span>
+                                <span class="text">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://twitter.com/intent/tweet?button_hashtag=CocktailsDelights&ref_src=twsrc%5Etfw"
+                                class="sm twitter">
+                                <span class="icon">
+                                    <i class="fab fa-twitter-square"></i>
+                                </span>
+                                <span class="text">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/" class="sm instagram">
+                                <span class="icon">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                                <span class="text">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://pinterest.com/pin/create/link/?url=" class="sm pinterest">
+                                <span class="icon">
+                                    <i class="fab fa-pinterest-square"></i>
+                                </span>
+                                <span class="text">Pinterest</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End of share button -->
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/js/searchcocktail.js"></script>
-    <script src="assets/js/randomcocktail.js"></script>
-    <script src="assets/js/sharebutton.js"></script>
-    <script src="assets/js/localstorage.js"></script>
-    <!-- <script>
-      document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=Lax";
-      alert( document.cookie );
-  </script> -->
 </body>
-
+<footer class="footer">
+    <h4 class="content has-text-centered">See You Again!</h4>
+    <p class="content has-text-centered">Created by <strong>Nguyen Doan, Alejandro Gonzalez, Matthew Villa, and Rhowen
+            Raju!!</strong></p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="assets/js/searchcocktail.js"></script>
+<script src="assets/js/randomcocktail.js"></script>
+<script src="assets/js/sharebutton.js"></script>
+<script src="assets/js/localstorage.js"></script>
 </html>
