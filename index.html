@@ -1,78 +1,121 @@
 <!DOCTYPE html>
 <html lang="en" class="has-background-primary">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@100&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Cocktails Delights</title>
-  </head>
-  <body>
-          <div class="titleHero">
-            <element id="Cocktails Delights"><span style="color:maroon">Cocktails</span><span style="color: black;"> Delights</span></element>
-        </div>
-        <div>
+</head>
+
+<body>
+    <div class="titleHero">
+        <element id="Cocktails Delights"><span style="color:maroon">Cocktails</span><span style="color: black;">
+                Delights</span></element>
+    </div>
+    <div>
         <figure class="image is10pxx10px">
             <img class="is-round" src="images/cocktail png.png">
-        </figure>    
+        </figure>
         <h4 id="subHead"><span style="color:black">Best Co</span><span style="color:orangered">cktials</span></h4>
-        </div>
-      </div>
+    </div>
+    </div>
     </section>
     <!-- End of Top part of page-->
     <!--Search Section-->
     <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-4">
-    <!--Random Cocktail Section-->
-    <div class="columns">
-        <div class="column">
-            <section class="section has-bg-img" id="search-box">
-                <div class="container">
-                    <h1 class="title">Know Whatch'a Want?</h1>
-                    <h2>Search by Cocktail Name</h2>
-                    <br>
-                    <div class="control">
-                        <input class="input" type="text" id="cocktail" placeholder="">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <!--Random Cocktail Section-->
+                    <div class="columns">
+                        <div class="column">
+                            <section class="section has-bg-img" id="search-box">
+                                <div class="container">
+                                    <h1 class="title">Know Whatch'a Want?</h1>
+                                    <h2>Search by Cocktail Name</h2>
+                                    <br>
+                                    <div class="control">
+                                        <input class="input" type="text" id="cocktail" placeholder="">
+                                    </div>
+                                    <br>
+                                    <div class="control">
+                                        <button class="button is-primary" id="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="column">
+                            <section class="section has-bg-img" id="search-box">
+                                <h1 class="title"> Wanna go crazy today?</h1>
+                                <h2>Try this button and find out!</h2>
+                                <br>
+                                <div class="control">
+                                    <button class="button is-primary" id="randomBt">Random</button>
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                    <br>
-                    <div class="control">
-                        <button class="button is-primary" id="submit">Submit</button>
+                    <div class="search-result">
+                        <div class="row displayCocktail" id="#displayCocktail">
+                            <div class="col-xs-push-2 col-xs-5" id="cocktailPicture"></div>
+                            <div class="col-xs-push-1 col-xs-4" id="cocktailInfo">
+                                <div id="cocktailTitle"></div>
+                                <div id="howTo"></div>
+                                <div id="instructions"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- share button for facebook and twitter -->
+                    <div class="wrapper">
+                        <div class="toggle_button">
+                            <ul>
+                                <li>
+                                    <a class="share_btn">
+                                        <span class="text">SHARE</span>
+                                        <span class="icon"><i class="fas fa-bullhorn"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="fb-share-button"
+                                        data-href="https://nguyendoan85.github.io/Ultimate-Cocktail-Page/"
+                                        data-layout="button_count" data-size="small">
+                                        <a target="_blank"
+                                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnguyendoan85.github.io%2FUltimate-Cocktail-Page%2F&amp;src=sdkpreparse"
+                                            class="fb-xfbml-parse-ignore">Share</a>
+                                    </div>
+                                </li>
+                                <br>
+                                <li>
+                                    <a href="https://twitter.com/intent/tweet?button_hashtag=CocktailsDelights&ref_src=twsrc%5Etfw"
+                                        class="twitter-hashtag-button" data-show-count="false">Tweet
+                                        #Cocktails_Delights</a>
+                                    <script async src="https://platform.twitter.com/widgets.js"
+                                        charset="utf-8"></script>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>
-        <div class="column">
-            <section class="section has-bg-img" id="search-box">
-                <h1 class="title"> Wanna go crazy today?</h1>
-                <h2>Try this button and find out!</h2>
-                <br>
-                <div class="control">
-                    <button class="button is-primary" id="randomBt">Random</button>
-                </div>
-            </section>
-        </div>
-    </div>
-    <div class="search-result">
-        <div class="row displayCocktail" id="#displayCocktail">
-            <div class="col-xs-push-2 col-xs-5" id="cocktailPicture"></div>
-            <div class="col-xs-push-1 col-xs-4" id="cocktailInfo">
-                <div id="cocktailTitle"></div>
-                <div id="howTo"></div>
-                <div id="instructions"></div>
             </div>
         </div>
-    </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/searchcocktail.js"></script>
     <script src="assets/js/randomcocktail.js"></script>
+    <script src="assets/js/sharebutton.js"></script>
     <!-- <script>
       document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=Lax";
       alert( document.cookie );
