@@ -1,11 +1,24 @@
 .titleHero{
- color: black;
- font-size: xx-large;
- font-weight: bold;
- display: inline-flex;
- flex-direction: column;
- justify-content: center;
- align-items: baseline;
+    font-family: cursive;
+    font-size: 50px;
+    color: black;
+    background-color: maroon;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.main-image{
+    width: 1425px;
+    height: 500px;;
+}
+.p1{
+    font-size: 25px;
+    color: white;
+}
+
+.section{
+    background-color: black;
+    margin-top: -6px;
 }
 
 #Cocktails-Delights {
@@ -21,6 +34,32 @@
 h4#subHead{
     font-weight: bold;
     font-size:x-large;
+}
+
+h2{
+    color: white;
+    font-family: cursive;
+
+}
+
+.Random-search{
+    position: absolute;
+    right: 150px;
+    border: 5px solid black;
+    height: 160px;
+    border-radius: 10px;
+    color: white;
+    font-family: cursive;
+}
+.title{
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+}
+
+#cocktailInfo{
+    color: white;
+    font-family: cursive;
 }
 
 /* Share Button */
