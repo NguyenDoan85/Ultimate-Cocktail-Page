@@ -109,22 +109,6 @@ h4#subHead{
     color: #1da1f2;
 }
 
-.toggle_button ul li a.instagram .icon{
-    background: #c32aa3;
-}
-
-.toggle_button ul li a.instagram .text{
-    color: #c32aa3;
-}
-
-.toggle_button ul li a.pinterest .icon{
-    background: #ff4500;
-}
-
-.toggle_button ul li a.pinterest .text{
-    color: #ff4500;
-}
-
 .toggle_button.active{
     height: 325px;
 }
