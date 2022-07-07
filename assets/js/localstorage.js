@@ -1,7 +1,3 @@
-$(document).ready(function(){
-    displaySearchHistory();
-})
-
 const displaySearchHistory = (newSearchTerm) => {
     let searchHistory = {};
     if (localStorage.getItem('search_history')) {
@@ -26,7 +22,7 @@ const updateSearchHistoryList = (searchHistory) => {
     searchHistoryList.empty();
     for (let i=0; i<Object.keys(searchHistory).length; i++) {
         const searchTerm = Object.keys(searchHistory)[i];
-        const searchTermElement = $('<li>').attr('data-search', cocktail)
+        const searchTermElement = $('<li>').attr('data-search', searchTerm)
 
         searchTermElement.hover(function() {
             $(this).css('cursor', 'pointer');
@@ -35,7 +31,7 @@ const updateSearchHistoryList = (searchHistory) => {
             $(this).removeClass('has-background-dark has-text-light');
         });
 
-        searchTermElement.text(`${searchHistory[cocktail].text}`);
+        searchTermElement.text(`${searchHistory[searchTerm].text}`);
         searchHistoryList.append(searchTermElement);
         searchTermElement.on('click', function() {
             cocktailSearch($(this).attr('data-search'));
