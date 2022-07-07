@@ -35,7 +35,8 @@
                     <section class="section" id="search-box">
                         <div class="container">
                             <h1 class="title">Wanna have some funs today?</h1>
-                            <h2>A cocktail drink is waiting for you! Scratch that, MANY cocktails drink is waiting for you! <strong>ENJOY!</strong></h2>
+                            <h2>A cocktail drink is waiting for you! Scratch that, MANY cocktails drink is waiting for
+                                you! <strong>ENJOY!</strong></h2>
                             <br>
                             <div class="control">
                                 <input class="input" type="text" id="cocktail" placeholder="">
@@ -45,24 +46,33 @@
                                 <button class="button is-primary" id="submit">Submit</button>
                             </div>
                         </div>
-
-                    </div>                    
                     </section>
                 </div>
-                <!-- End of search of cocktail by name -->                    
-                <!--Random Cocktail Section-->
-                <div class="column">
-                    <section class="section" id="search-box">
-                        <h1 class="title"> Wanna go crazy today?</h1>
-                        <h2>Try this button and find out!</h2>
-                        <br>
-                        <div class="control">
-                            <button style="font-family:cursive" class="button is-primary" id="randomBt">Random</button>
-                        </div>
-                    </section>
-                </div>
-                <!-- End of Random Cocktail Section -->
             </div>
+            <!-- End of search of cocktail by name -->
+
+            <!--Search history-->
+            <div class="notification has-background-grey-lighter" id="search-history">
+                <label class="label">Search History</label>
+                <p id='search-history-help'>Once you search for some recipes, your queries will be saved here for easy
+                    access.</p>
+                <ul id="search-history-list">
+                </ul>
+            </div>
+            <!-- Search history end -->
+
+            <!--Random Cocktail Section-->
+            <div class="column">
+                <section class="section" id="search-box">
+                    <h1 class="title"> Wanna go crazy today?</h1>
+                    <h2>Try this button and find out!</h2>
+                    <br>
+                    <div class="control">
+                        <button style="font-family:cursive" class="button is-primary" id="randomBt">Random</button>
+                    </div>
+                </section>
+            </div>
+            <!-- End of Random Cocktail Section -->
 
             <!-- Display info replayed back from the API server -->
             <div class="search-result">
@@ -141,4 +151,5 @@
 <script src="assets/js/randomcocktail.js"></script>
 <script src="assets/js/sharebutton.js"></script>
 <script src="assets/js/localstorage.js"></script>
+
 </html>
