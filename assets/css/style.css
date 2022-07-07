@@ -74,6 +74,8 @@ h2{
 }
 
 #cocktailInfo{
+    background: #0BA8E6;
+    opacity: 70%;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -89,8 +91,9 @@ h2{
 /* Custom CSS for drink img */
 .drinkThumb {
     border-radius: 50%;
-    margin-left: 18%;
     opacity: .90;
+    width: 400px;
+    height: auto;
 }
 
 /* Share Button */
@@ -110,7 +113,7 @@ h2{
     border-radius: 45px;
     overflow: hidden;
     transition: all 0.2s ease;
-    margin-left: 35%;
+    margin: 0 auto;
 }
 
 .toggle_button ul li a{
@@ -211,4 +214,22 @@ h2{
 .toggle_button.active ul li a.sm {
     visibility: visible;
     transition-delay: 0.3s;
+}
+
+.search-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.cocktailName {
+    font-weight: bold;
+}
+#search-history{
+    opacity: 70%;
+    background-color: mediumaquamarine;
+}
+#submit{
+    font-family: cursive;
 }
