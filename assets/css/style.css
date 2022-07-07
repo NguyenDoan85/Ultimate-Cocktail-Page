@@ -1,19 +1,36 @@
 .titleHero{
-    font-family: cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
-    color: black;
-    background-color: maroon;
+    color: #0BA8E6;
+    background-color: whitesmoke;
     font-weight: bold;
     text-align: center; 
 }
-
+.navBar {
+    list-style-type:none;
+    margin-left: 42%;
+    padding: 0;
+  }
+  .navBar li {
+    display: inline;
+  }
+  .navBar li a {
+    display: inline;
+    color: #0BA8E6;
+    text-align: center;
+    padding: 9px 10px;
+    text-decoration: none;
+  }
+  .navBar li a:hover {
+    background-color: mediumaquamarine;
+  }
 .main-image{
     width: 1425px;
     height: 500px;;
 }
 .p1{
     font-size: 25px;
-    color: white;
+    color: mediumaquamarine;
 }
 
 .fb-share-button {
@@ -58,7 +75,7 @@ h2{
 
 #cocktailInfo{
     color: white;
-    font-family: cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #background{
@@ -69,7 +86,12 @@ h2{
     -o-background-size: cover;
 
 }
-
+/* Custom CSS for drink img */
+.drinkThumb {
+    border-radius: 50%;
+    margin-left: 18%;
+    opacity: .90;
+}
 
 /* Share Button */
 *{
@@ -88,6 +110,7 @@ h2{
     border-radius: 45px;
     overflow: hidden;
     transition: all 0.2s ease;
+    margin-left: 35%;
 }
 
 .toggle_button ul li a{

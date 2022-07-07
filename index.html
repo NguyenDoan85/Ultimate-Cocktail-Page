@@ -19,12 +19,16 @@
 
     <title>Cocktails Delights</title>
 </head>
-
 <body>
     <div class="titleHero">
         <element id="Cocktails Delights">Cocktail Delights</element>
-        <p class="p1">The best cocktails out there!</p>
+        <p class="p1">The Best Cocktail Recipes on the Web!</p>
     </div>
+    <ul class="navBar">
+        <li><a href="#search-box">Search</a></li>
+        <li><a href="#share">Share</a></li>
+        <li><a href="#credit">About</a></li>
+      </ul>
     <!-- End of Top part of page-->
     <!--Search Section-->
     <section class="hero is-fullheight is-primary has-bg-img" id="background">
@@ -34,9 +38,8 @@
                 <div class="column">
                     <section class="section" id="search-box">
                         <div class="container">
-                            <h1 class="title">Wanna have some funs today?</h1>
-                            <h2>A cocktail drink is waiting for you! Scratch that, MANY cocktails drink is waiting for
-                                you! <strong>ENJOY!</strong></h2>
+                            <h1 class="title">Got a Drink in Mind?</h1>
+                            <h2>Search for that one drink you've always had in mind... <strong>ENJOY!</strong></h2>
                             <br>
                             <div class="control">
                                 <input class="input" type="text" id="cocktail" placeholder="">
@@ -48,6 +51,21 @@
                         </div>
                     </section>
                 </div>
+                <!-- End of search of cocktail by name -->
+
+                <!--Random Cocktail Section-->
+                <div class="column">
+                    <section class="section" id="search-box">
+                        <h1 class="title"> Feeling Frisky?</h1>
+                        <h2>Click here and find a drink to match the mood!</h2>
+                        <br>
+                        <div class="control">
+                            <button style="font-family:cursive" class="button is-primary" id="randomBt">Random</button>
+                        </div>
+                    </section>
+                </div>
+                <!-- End of Random Cocktail Section -->
+            </div>
             </div>
             <!-- End of search of cocktail by name -->
 
@@ -61,18 +79,6 @@
             </div>
             <!-- Search history end -->
 
-            <!--Random Cocktail Section-->
-            <div class="column">
-                <section class="section" id="search-box">
-                    <h1 class="title"> Wanna go crazy today?</h1>
-                    <h2>Try this button and find out!</h2>
-                    <br>
-                    <div class="control">
-                        <button style="font-family:cursive" class="button is-primary" id="randomBt">Random</button>
-                    </div>
-                </section>
-            </div>
-            <!-- End of Random Cocktail Section -->
 
             <!-- Display info replayed back from the API server -->
             <div class="search-result">
@@ -92,7 +98,7 @@
                 <div class="toggle_button">
                     <ul>
                         <li>
-                            <a class="share_btn">
+                            <a class="share_btn" id="share">
                                 <span class="text">SHARE</span>
                                 <span class="icon"><i class="fas fa-bullhorn"></i></span>
                             </a>
@@ -140,7 +146,7 @@
         </div>
     </section>
 </body>
-<footer class="footer">
+<footer class="footer" id="credit">
     <h4 class="content has-text-centered">See You Again!</h4>
     <p class="content has-text-centered">Created by <strong>Nguyen Doan, Alejandro Gonzalez, Matthew Villa, and Rhowen
             Raju!!</strong></p>
@@ -151,5 +157,4 @@
 <script src="assets/js/randomcocktail.js"></script>
 <script src="assets/js/sharebutton.js"></script>
 <script src="assets/js/localstorage.js"></script>
-
 </html>
