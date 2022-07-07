@@ -61,7 +61,6 @@ h2{
     font-family: cursive;
 }
 
-/* background picture for the body section */
 #background{
     background: url(../../images/CocktailOcean.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -70,6 +69,7 @@ h2{
     -o-background-size: cover;
 
 }
+
 
 /* Share Button */
 *{
@@ -88,7 +88,6 @@ h2{
     border-radius: 45px;
     overflow: hidden;
     transition: all 0.2s ease;
-    margin-left: 40%;
 }
 
 .toggle_button ul li a{

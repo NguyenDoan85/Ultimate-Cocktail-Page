@@ -3,7 +3,7 @@ A page for cocktail lover to search for their favorite cocktail's recipe!
 
 ## Colaborators
 
-- Nguyen Doan: worked on randomcocktail.js, searchcocktail.js, share.js and share code on HTML and css
+- Nguyen Doan: worked on randomcocktail.js and searchcontail.js
 - Matthew: worked on localstorage.js
 - Alejandro: worked on html and css
 - Rhowen: worked on html and css
