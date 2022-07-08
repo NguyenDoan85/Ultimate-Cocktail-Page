@@ -21,7 +21,11 @@ A page for cocktail lover to search for their favorite cocktail's recipe!
 - Live link deployed: [https://nguyendoan85.github.io/Ultimate-Cocktail-Page/](https://nguyendoan85.github.io/Ultimate-Cocktail-Page/)
 
 ## Screen Shots
-[]()
+[Front Page](./images/frontpage.jpg)
+[Frotn Page Credit](./images/frontpagecredit.jpg)
+[Search Cocktail](./images/SearchCocktail.jpg)
+[Random Cocktail](./images/RandomCocktail.jpg)
+[Share Button](./images/ShareButton.jpg)
 
 ## Credits
 
