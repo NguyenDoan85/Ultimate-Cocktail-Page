@@ -3,7 +3,7 @@ A page for cocktail lover to search for their favorite cocktail's recipe!
 
 ## Colaborators
 
-- Nguyen Doan: worked on randomcocktail.js, searchcontail.js, sharebutton.js, part of html and css.
+- Nguyen Doan: worked on randomcocktail.js, searchcoktail.js, sharebutton.js, part of html and css.
 - Matthew: worked on localstorage.js
 - Alejandro: worked on html and css
 - Rhowen: worked on html and css
@@ -21,11 +21,11 @@ A page for cocktail lover to search for their favorite cocktail's recipe!
 - Live link deployed: [https://nguyendoan85.github.io/Ultimate-Cocktail-Page/](https://nguyendoan85.github.io/Ultimate-Cocktail-Page/)
 
 ## Screen Shots
-[Front Page](./images/frontpage.jpg)
-[Frotn Page Credit](./images/frontpagecredit.jpg)
-[Search Cocktail](./images/SearchCocktail.jpg)
-[Random Cocktail](./images/RandomCocktail.jpg)
-[Share Button](./images/ShareButton.jpg)
+![Front Page](./images/frontpage.jpg)
+![Front Page Credit](./images/frontpagecredit.jpg)
+![Search Cocktail](./images/SearchCocktail.jpg)
+![Random Cocktail](./images/RandomCocktail.jpg)
+![Share Button](./images/ShareButton.jpg)
 
 ## Credits
 

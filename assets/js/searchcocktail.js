@@ -1,5 +1,8 @@
 //global variable
 const searchCocktail = document.getElementById('cocktail');
+var searchHistory = localStorage.getItem(searchHistory);
+
+searchCocktail.textContent = searchHistory;
 
 //event listener
 searchCocktail.addEventListener('change', () => {
@@ -17,6 +20,7 @@ function getCocktailByName(cocktail) {
         .catch((error) => {
             console.log(error)
         })
+    localStorage.setItem("searchHistory", JSON.stringify(cocktail))
 }
 
 //function that display info to the html

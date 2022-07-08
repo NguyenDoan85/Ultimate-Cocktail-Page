@@ -1,3 +1,4 @@
+
 const displaySearchHistory = (newSearchTerm) => {
     let searchHistory = {};
     if (localStorage.getItem('search_history')) {
